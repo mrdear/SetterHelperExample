@@ -15,6 +15,8 @@ public class DoToDto {
      * Standard
      */
     public static UserDTO toUserDto(UserDO userDO) {
+        // TODO 在这里面触发补全快捷键,即可以得到与下面相同结果
+
         UserDTO userDTO = new UserDTO();
         userDTO.setId(userDO.getId());
         userDTO.setName(userDO.getName());
@@ -30,6 +32,8 @@ public class DoToDto {
      * Standard
      */
     public static UserBuilderDTO toUserBuilderDTO(UserDO userDO) {
+        // TODO 在这里面触发补全快捷键,即可以得到与下面相同结果
+
         UserBuilderDTO userBuilderDTO = UserBuilderDTO.builder()
             .id(userDO.getId())
             .name(userDO.getName())
@@ -40,34 +44,6 @@ public class DoToDto {
             .address(userDO.getAddress())
             .build();
         return userBuilderDTO;
-    }
-
-    /**
-     * test使用
-     */
-    public static UserDTO toUserDto_test(UserDO userDO) {
-        // 在这里面触发补全快捷键,即可以得到与上述相同结果
-
-        return null; // 防IDE报错
-    }
-
-    /**
-     * test使用
-     */
-    public static UserDTO toUserDto_test2(UserDO userDO) {
-        // 光标在userDTO变量上触发,也能得到相同结果
-        UserDTO userDTO = new UserDTO();
-
-        return null; // 防IDE报错
-    }
-
-    /**
-     * test使用
-     */
-    public static UserBuilderDTO toUserBuilderDTO_test(UserDO userDO) {
-        // 在这里面触发补全快捷键,即可以得到与上述相同结果
-
-        return null; // 防IDE报错
     }
 
 }

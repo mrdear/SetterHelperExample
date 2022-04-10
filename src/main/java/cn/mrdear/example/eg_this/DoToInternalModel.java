@@ -37,7 +37,7 @@ public class DoToInternalModel {
 
 
     public DoToInternalModel(UserDO userDO) {
-        // 在这里触发快捷键，则会补全下列代码
+        // TODO 在这里触发快捷键，则会补全下列代码
         this.email = userDO.getEmail();
         this.passwd = userDO.getPasswd();
         this.lastLoginTime = userDO.getLastLoginTime();
@@ -49,6 +49,8 @@ public class DoToInternalModel {
      * Standard
      */
     public static DoToInternalModel of(UserDO userDO) {
+        // TODO 在这里触发快捷键，则会补全下列代码
+
         DoToInternalModel doToInternalModel = new DoToInternalModel();
         doToInternalModel.email = userDO.getEmail();
         doToInternalModel.passwd = userDO.getPasswd();
@@ -58,9 +60,4 @@ public class DoToInternalModel {
         return doToInternalModel;
     }
 
-    public static DoToInternalModel of_test(UserDO userDO) {
-        // 在这里面触发补全快捷键,即可以得到与上述相同结果
-
-        return null; // 防止IDE报错
-    }
 }
