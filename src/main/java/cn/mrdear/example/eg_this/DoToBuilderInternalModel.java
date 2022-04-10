@@ -52,6 +52,7 @@ public class DoToBuilderInternalModel {
      */
     public static DoToBuilderInternalModel of(UserDO userDO) {
         // TODO 在这里面触发补全快捷键,即可以得到与下面相同结果
+
         DoToBuilderInternalModel doToBuilderInternalModel = DoToBuilderInternalModel.builder()
             .email(userDO.getEmail())
             .passwd(userDO.getPasswd())

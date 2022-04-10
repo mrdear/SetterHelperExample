@@ -38,6 +38,7 @@ public class DoToInternalModel {
 
     public DoToInternalModel(UserDO userDO) {
         // TODO 在这里触发快捷键，则会补全下列代码
+
         this.email = userDO.getEmail();
         this.passwd = userDO.getPasswd();
         this.lastLoginTime = userDO.getLastLoginTime();

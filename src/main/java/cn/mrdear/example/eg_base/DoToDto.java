@@ -33,7 +33,6 @@ public class DoToDto {
      */
     public static UserBuilderDTO toUserBuilderDTO(UserDO userDO) {
         // TODO 在这里面触发补全快捷键,即可以得到与下面相同结果
-
         UserBuilderDTO userBuilderDTO = UserBuilderDTO.builder()
             .id(userDO.getId())
             .name(userDO.getName())
